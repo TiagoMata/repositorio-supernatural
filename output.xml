@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-13T19:55:52.482519" rpa="false" schemaversion="5">
+<suite id="s1" name="Testes Qacoders" source="c:\Users\tiago_mata\Downloads\Supernatural\repositorio-supernatural\tests\testes_qacoders.robot">
+<test id="s1-t1" name="cenario de teste: Editar usuário" line="11">
+<kw name="Abrir o navegador" owner="testes_recursos_qacoders" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-13T19:55:52.705127" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-13T19:55:52.704350" elapsed="2.032654"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-13T19:55:54.737004" elapsed="0.132687"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:55:52.703071" elapsed="2.166620"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="testes_recursos_qacoders">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-13T19:55:54.871693" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-13T19:55:54.871693" elapsed="0.489171"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:55:54.870693" elapsed="0.491175"/>
+</kw>
+<kw name="Passo 2 - Logar no site QaCoders" owner="testes_recursos_qacoders">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailLogin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-13T19:55:55.363104" elapsed="0.072298"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T19:55:55.436403" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'email'.</msg>
+<arg>locator=${emailLogin}</arg>
+<arg>text=sysadmin@qacoders.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T19:55:55.435402" elapsed="0.234221"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T19:55:55.670621" level="INFO">Typing text '1234@Test' into text field 'password'.</msg>
+<arg>locator=${senhaLogin}</arg>
+<arg>text=1234@Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T19:55:55.669623" elapsed="0.136852"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T19:55:55.808476" level="INFO">Clicking element 'login'.</msg>
+<arg>locator=${entrarLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T19:55:55.807477" elapsed="0.127525"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:55:55.361868" elapsed="0.574165"/>
+</kw>
+<kw name="Passo 3 - Clicar no botão de ação MultiMenu" owner="testes_recursos_qacoders">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-13T19:55:56.937489" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-13T19:55:55.937133" elapsed="1.000356"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${multiMenu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-13T19:55:56.937489" elapsed="0.030925"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T19:55:56.969470" level="INFO">Clicking element '//span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Cadastros')]'.</msg>
+<arg>locator=${multiMenu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T19:55:56.968414" elapsed="0.068717"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:55:55.936033" elapsed="1.101098"/>
+</kw>
+<kw name="Passo 4 - Clicar na opção Usuários" owner="testes_recursos_qacoders">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${usuarioBotao}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-13T19:55:57.040139" elapsed="0.036449"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T19:55:57.078193" level="INFO">Clicking element '//span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Usuários')] '.</msg>
+<arg>locator=${usuarioBotao}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T19:55:57.078193" elapsed="0.107667"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:55:57.038130" elapsed="0.148727"/>
+</kw>
+<kw name="Fechar o navegador" owner="testes_recursos_qacoders" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-13T19:55:57.189305" elapsed="2.197937"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:55:57.186857" elapsed="2.200385"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:55:52.702059" elapsed="6.686186"/>
+</test>
+<status status="PASS" start="2024-04-13T19:55:52.488672" elapsed="6.900688"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testes Qacoders">Testes Qacoders</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
